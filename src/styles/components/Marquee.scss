@@ -1,0 +1,42 @@
+@import "../functions";
+@import "../varibales";
+@import "../fonts";
+
+.marquis {
+  display: block;
+
+  width: 100vw;
+
+  z-index: 1;
+
+  //border-top: solid 5px $color-secondary;
+  //border-bottom: solid 5px $color-secondary;
+  border-top: solid 5px #fff;
+  border-bottom: solid 5px #fff;
+
+  font-size: rem(68px);
+  font-family: $font-rubik;
+  color: #fff;
+
+  overflow-x: hidden;
+
+  .marquee-moving {
+    width: max-content;
+    animation: marquis linear infinite;
+
+    .marquis-elem {
+      White-space: nowrap;
+      margin-inline: rem(80px);
+    }
+  }
+}
+
+
+@keyframes marquis {
+  from {
+    transform: translate3d(-0%,0,0);
+  }
+  to {
+    transform: translate3d(-60%, 0, 0);
+  }
+}

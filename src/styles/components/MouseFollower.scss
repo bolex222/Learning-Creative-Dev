@@ -1,0 +1,15 @@
+@import "../varibales";
+
+.mouse-follower {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  //border: solid 3px #0D4ABB;
+  //background-color: #C3B68C;
+  background-color: #fff;
+  mix-blend-mode: difference;
+  z-index: 10;
+  pointer-events: none;
+}

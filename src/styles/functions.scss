@@ -1,0 +1,13 @@
+@import "varibales";
+
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
+@function html-font-size($pixel-size) {
+  @return percentage($pixel-size / 16px)
+}
