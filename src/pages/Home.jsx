@@ -35,7 +35,7 @@ const Home = () => {
           <span id="Ttl9">M</span>
         </h1>
         <ImgParallax />
-        <Marquee speed={350} text="I'M HAVING SOME FUN" />
+        <Marquee speed={250} text="I'M HAVING SOME FUN" />
       </section>
     </main>
   )
